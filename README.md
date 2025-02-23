@@ -22,14 +22,14 @@ StatSync is a social media platform for tracking and sharing sports statistics, 
 
 ## Features Implemented
 
-[ ] Authentication (Login, Register, Logout) using Redux & Thunks
-[ ] Protected Routes using React Router
-[ ] API Integration with Axios
-[ ] Global State Management with Redux Toolkit
-[ ] Efficient Data Fetching with React Query
+- [ ] Authentication (Login, Register, Logout) using Redux & Thunks
+- [ ] Protected Routes using React Router
+- [ ] API Integration with Axios
+- [ ] Global State Management with Redux Toolkit
+- [ ] Efficient Data Fetching with React Query
 
 ## Upcoming Features
 
-[ ] Leaderboard System – Users can track and compare their rankings.
-[ ] Meetup System – Users can find and arrange sports meetups.
-[ ] UI Components – Adding Chakra UI for styling.
+- [ ] Leaderboard System – Users can track and compare their rankings.
+- [ ] Meetup System – Users can find and arrange sports meetups.
+- [ ] UI Components – Adding Chakra UI for styling.
