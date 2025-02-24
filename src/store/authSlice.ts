@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import axios from "axios";
+import { isUserAuthenticaed } from "../api/authControllers";
 
 type initialStateType = {
   isAuthenticated: boolean;
@@ -13,8 +13,8 @@ const initialState: initialStateType = {
 };
 
 export const authVerify = createAsyncThunk("auth/isAuthenticated", async () => {
-  const response = await axios.get<{ isauth: boolean }>("process");
-  return response.data.isauth;
+  const response = await isUserAuthenticaed();
+  console.log(response);
 });
 
 export const authSlice = createSlice({
@@ -32,7 +32,6 @@ export const authSlice = createSlice({
       })
       .addCase(authVerify.fulfilled, (state) => {
         state.loading = "succeeded";
-        state.isAuthenticated = true;
       })
       .addCase(authVerify.rejected, (state) => {
         state.loading = "failed";
